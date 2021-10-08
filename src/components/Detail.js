@@ -15,11 +15,24 @@ function Detail() {
       <p className="detail__description">{info.description}</p>
       <div className="detail__footer">
         <div className="detail_img_container">
-          <img src={info.imageWeb} alt="web" />
-          <img src={info.imageMobile} alt="mobile" />
+          <div>
+            <h2>Web</h2>
+            <div className="img__border">
+              <img src={info.imageWeb} alt="web" />
+            </div>
+            <p>{info.descriptionWeb}</p>
+          </div>
+          <div>
+            <h2>Movil</h2>
+            <div className="img__border">
+              <img src={info.imageMobile} alt="mobile" />
+            </div>
+            <p>{info.descriptionMobile}</p>
+          </div>
         </div>
-        <Link to="/">
+        <Link to="/" className="home__button">
           <i class="fas fa-home"></i>
+          <p>Home</p>
         </Link>
       </div>
     </div>

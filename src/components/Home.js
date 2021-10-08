@@ -12,7 +12,12 @@ function Home() {
         {data.map((item, index) => (
           <Link to={`/detail/${item.id}`} key={index}>
             <div key={index} className="home__item">
-              <img key={index} src={item.image} alt={item.title} />
+              <img
+                className="item__img"
+                key={index}
+                src={item.image}
+                alt={item.title}
+              />
             </div>
           </Link>
         ))}
