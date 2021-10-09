@@ -13,7 +13,7 @@ function Detail() {
     <div className="detail">
       <h1 className="detail__title">{info.title}</h1>
       <p className="detail__description">{info.description}</p>
-      <div className="detail__footer">
+      <div className="detail__images">
         <div className="detail_img_container">
           <div>
             <h2>Web</h2>
@@ -30,10 +30,26 @@ function Detail() {
             <p>{info.descriptionMobile}</p>
           </div>
         </div>
-        <Link to="/" className="home__button">
-          <i class="fas fa-home"></i>
-          <p>Home</p>
-        </Link>
+        <div className="detail__footer">
+          {parseInt(id) !== 1 ? (
+            <Link to={`/detail/${parseInt(id) - 1}`}>
+              <i className="fas fa-chevron-left detail__footer__arrow"></i>
+            </Link>
+          ) : (
+            <i className="fas fa-chevron-left detail__footer__arrow disabled__arrow"></i>
+          )}
+          <Link to="/" className="home__button">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </Link>
+          {parseInt(id) !== data.length ? (
+            <Link to={`/detail/${parseInt(id) + 1}`}>
+              <i className="fas fa-chevron-right detail__footer__arrow"></i>
+            </Link>
+          ) : (
+            <i className="fas fa-chevron-right detail__footer__arrow disabled__arrow"></i>
+          )}
+        </div>
       </div>
     </div>
   );

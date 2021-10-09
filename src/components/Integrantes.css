@@ -1,0 +1,17 @@
+.integrantes {
+  text-align: center;
+}
+
+hr {
+  border: 1px solid rgba(204, 204, 204, 0.281);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.integrantes__title {
+  margin: 8rem 0;
+}
+
+h2.name {
+  font-weight: 400;
+}

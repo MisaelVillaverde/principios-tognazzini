@@ -9,6 +9,13 @@
   margin-top: 6rem;
   text-align: center;
 }
+.home__subtitle__container {
+  width: 100%;
+  text-align: center;
+}
+.home__subtitle {
+  display: inline-block;
+}
 
 .home__container {
   background-color: #ffffff;
@@ -19,13 +26,19 @@
   margin-top: 4rem;
   padding: 5rem;
   gap: 3rem 0;
-  border: 1px solid #e5e5e5;
   border-radius: 1rem;
 }
 
 .home__item {
+  height: 250px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 350ms;
   overflow: hidden;
+  border: 3px dashed #d6d6d649;
+  border-radius: 10px;
 }
 
 .home__item:hover {
@@ -34,7 +47,7 @@
 }
 
 .item__img {
-  width: 350px;
+  max-height: 250px;
+  max-width: 350px;
   border-radius: 10px;
-  border: 1px solid #d6d6d649;
 }

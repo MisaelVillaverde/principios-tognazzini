@@ -7,6 +7,11 @@ function Home() {
   return (
     <div className="home">
       <h1 className="home__title">Principios de Bruce Tognazzini</h1>
+      <div className="home__subtitle__container">
+        <Link to="/integrantes">
+          <h2 className="home__subtitle">Grupo 2</h2>
+        </Link>
+      </div>
 
       <div className="home__container">
         {data.map((item, index) => (

@@ -7,3 +7,14 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+h2 {
+  width: fit-content;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}

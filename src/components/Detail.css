@@ -18,7 +18,7 @@
   margin: 0 7rem 5rem 7rem;
 }
 
-.detail__footer {
+.detail__images {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,24 +45,7 @@
   border: 2px dashed #ccc;
   border-radius: 20px;
   margin: 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-.home__button {
-  transition: color 0.25s ease-in-out;
-  cursor: pointer;
-}
-
-.home__button > i {
-  font-size: 3rem;
-}
-
-.home__button:hover {
-  color: #ffc107;
+  overflow: hidden;
 }
 
 .detail_img_container > div > p {
@@ -73,11 +56,61 @@ a {
 .img__border {
   display: flex;
   justify-content: center;
-  background-color: rgb(219, 219, 219);
-  border-radius: 20px;
 }
 
 .img__border > img {
   max-width: 600px;
-  height: auto;
+  max-height: 450px;
+  width: auto;
+}
+
+.detail__footer {
+  display: flex;
+  align-items: center;
+}
+
+.home__button {
+  transition: color 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.home__button:hover {
+  color: #ffc107;
+}
+
+.home__button > i {
+  font-size: 2.6rem;
+}
+
+.home__button > p {
+  margin-top: 0;
+}
+
+.detail__footer__arrow {
+  font-size: 1.6rem;
+  margin: 0 5rem 1rem 5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+
+.detail__footer__arrow:hover {
+  color: rgba(255, 141, 47, 0.63);
+}
+
+.disabled__arrow {
+  color: rgba(0, 0, 0, 0.178);
+}
+
+.disabled__arrow {
+  cursor: not-allowed;
+}
+
+.disabled__arrow:hover {
+  color: rgba(0, 0, 0, 0.178);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
