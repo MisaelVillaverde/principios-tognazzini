@@ -19,7 +19,6 @@ function Integrantes() {
       <br />
       <br />
       <br />
-      <br />
       <Link to="/" className="home__button">
         <i class="fas fa-home"></i>
         <p>Home</p>
